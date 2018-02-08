@@ -19,7 +19,7 @@ WIN_COMBINATIONS = [
 def won?(board)
   WIN_COMBINATIONS.each do |combo|
     a, b, c = combo
-    return true if board[a] == board[b] && board[b] == board[c] && ['X', 'O'].include?(board[a])
+    return [a, b, c] if board[a] == board[b] && board[b] == board[c] && ['X', 'O'].include?(board[a])
   end
   false
 end
