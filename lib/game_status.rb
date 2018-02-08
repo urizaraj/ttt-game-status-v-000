@@ -37,3 +37,8 @@ end
 def over?(board)
   won?(board) || full?(board) || draw?(board)
 end
+
+def winner(board)
+  a, b, c = won?(board)
+  return board[a]
+end
