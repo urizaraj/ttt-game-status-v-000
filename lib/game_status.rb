@@ -29,3 +29,11 @@ def full?(board)
     ['X', 'O'].include?(value)
   end
 end
+
+def draw?(board)
+  full?(board) && !won?(board)
+end
+
+def over?(board)
+  won?(board) || full?(board) || draw?(board)
+end
