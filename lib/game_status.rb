@@ -23,3 +23,9 @@ def won?(board)
   end
   false
 end
+
+def full?(board)
+  board.all? do |value|
+    ['X', 'O'].include?(value)
+  end
+end
