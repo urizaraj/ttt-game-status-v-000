@@ -21,4 +21,5 @@ def won?(board)
     a, b, c = combo
     return true if board[a] == board[b] && board[b] == board[c] && ['X', 'O'].include?(board[a])
   end
+  false
 end
